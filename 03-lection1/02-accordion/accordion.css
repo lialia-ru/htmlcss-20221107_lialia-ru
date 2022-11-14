@@ -1,1 +1,23 @@
 /* Стилизация аккордеона */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+details {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    max-width: 730px;
+    font-size: 16px;
+    margin: 8px;
+}
+
+summary {
+    padding: 24px 0 24px 32px;
+}
+
+p {
+    padding: 0 49px 32px 32px;
+    color: var(--grey-4);
+    line-height: 24px;
+}
