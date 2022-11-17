@@ -1,29 +1,50 @@
 /* Стилизация аккордеона */
 
-
-.container {
-    max-width: 730px;
-    margin-bottom: 8px;
-    box-sizing: border-box;
-}
-
-.wrapper :last-child {
-    margin-bottom: 0px;
-}
-
-.accordion {
-    border: 1px solid var(--grey-3);
-    border-radius: 8px;
-}
+.accordion {}
 
 .accordion__item {
+    border: 1px solid #ACB5BD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.accordion__item:last-child {
+    margin-bottom: 0;
+}
+
+.accordion__summary {
+    display: block;
+    /* padding, а не margin, так как хотим, чтобы область оставалась кликабельной */
+    padding: 24px 32px;
+    cursor: pointer;
+    outline: none;
+
     font-size: 16px;
-    padding: 24px 0 24px 32px;
+    line-height: 24px;
+    color: #212429;
+}
+
+.accordion__item[open] .accordion__summary {
+    padding-bottom: 16px;
+}
+/* За стрелочку в summary отвечает псевдоэлемент ::-webkit-details-marker. нестандартный псевдоэлемент Google Chrome */
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion__content {
+    padding: 0 32px 32px;
 }
 
 .accordion__text {
-    padding: 0 49px 32px 32px;
     margin: 0;
-    color: var(--grey-4);
+
+    font-size: 16px;
     line-height: 24px;
+    color: #495057;
 }
+
+
+
+
