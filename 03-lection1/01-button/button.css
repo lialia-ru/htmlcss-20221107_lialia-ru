@@ -10,12 +10,13 @@
     cursor: pointer;
     padding: 15px 60px 14px 60px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }  
 
 .btn_Primary {
     background-color: #4263EB;
     border: 1px solid var(--black);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+   
 }
 
 .btn_Primary:active,
@@ -31,7 +32,6 @@
 
 .btn_Secondary  {
     background-color: var(--purple);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .btn_Secondary:active,
@@ -44,7 +44,6 @@
     background-color: var(--white);
     border: 1px solid var(--grey-3);
     color: var(--grey-4);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .btn_Alternate:active,
